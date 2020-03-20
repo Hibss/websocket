@@ -1,0 +1,18 @@
+server:
+  port: 8888
+  undertow:
+    io-threads: 16
+    worker-threads: 256
+    buffer-size: 1024
+    direct-buffers: true
+spring:
+  profiles:
+    active: dev
+  thymeleaf:
+    suffix: .html
+    prefix: classpath:/templates/
+    servlet:
+      content-type: text/html
+    cache: false
+    mode: HTML
+    encoding: utf-8
